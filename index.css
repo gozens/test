@@ -24,9 +24,9 @@
     text-align: center;
     margin-bottom: 10px;
     position: fixed;
-    width: 95%;
+    width: 100%;
     background-color: white;
-    height: 60px;
+    height: 100px;
     padding-top: 5px;
 
 }
@@ -36,26 +36,36 @@ button{
     padding: 13px;
     border-radius: 15px;
     margin-right: 5px;
-    color: rgb(0, 0, 0);
     font-weight: bold;
     height: 70px;
     width: 22%;
+    color: white;
 }
 .but0{
     background-color: rgba(15, 110, 199, 0.808);
-    color: white;
+    /* border-radius: ; */
 }
 .but1{
     background-color: rgb(15, 199, 76);
-    color: white;
 }
 .but2{
-    color: white;
     background-color: rgba(219, 19, 46, 0.808);
 }
-.but3{
-    color: white;
+.but3{ 
     background-color: rgba(0, 0, 0, 0.808);
+}
+button:hover{
+    transition: all 1s;
+    transform: translate(0,4px);
+}
+.barre{
+    margin-left: 2%;
+    color: white;
+    width: 0%;
+    height: 17px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(0,5px);
+    transition: all 1s;
 }
 /* @media screen and (max-width:520px) {
     
