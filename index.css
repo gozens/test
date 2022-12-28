@@ -1,0 +1,66 @@
+
+.div1{
+    text-align: center;
+    /* border: 2px solid rgba(132, 132, 138, 0.733); */
+    /* padding: 30px; */
+}
+.div{
+    margin: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    background-color: rgba(204, 71, 71, 0.685);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.pos-but{
+    text-align: center;
+    margin-bottom: 10px;
+    position: fixed;
+    width: 95%;
+    background-color: white;
+    height: 60px;
+    padding-top: 5px;
+
+}
+button{
+    font-size: 20px;
+    border: 0;
+    padding: 13px;
+    border-radius: 15px;
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    /* width: 24%; */
+    /* width: 100px; */
+}
+.but0{
+    background-color: rgba(15, 110, 199, 0.808);
+    color: white;
+}
+.but1{
+    background-color: rgb(15, 199, 76);
+    color: white;
+}
+.but2{
+    color: white;
+    background-color: rgba(219, 19, 46, 0.808);
+}
+.but3{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+@media screen and (max-width:520px) {
+    .pos-but{
+        width: 100%;
+        /* font-size: 250%; */
+    }
+    button{
+        margin: 0;
+        font-size: 15px;
+    }
+}
