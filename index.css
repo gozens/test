@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .div1{
     text-align: center;
     /* border: 2px solid rgba(132, 132, 138, 0.733); */
@@ -58,9 +61,10 @@ button{
     .pos-but{
         width: 100%;
         /* font-size: 250%; */
+        /* background-color: rgb(0, 0, 0); */
     }
     button{
         margin: 0;
-        font-size: 15px;
+        font-size: 35px;
     }
 }
