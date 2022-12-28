@@ -2,8 +2,7 @@
 const posB = document.querySelector('.pos-but')
 function plc() {
     h = innerHeight
-    console.log(h);
-    posB.style.transform = 'translate(0,'+(h-70)+'px)'
+    posB.style.transform = 'translate(0,'+(h-100)+'px)'
 }
 plc()
 const ajouters = document.querySelector('.but1')

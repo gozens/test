@@ -38,8 +38,8 @@ button{
     margin-right: 5px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    /* width: 24%; */
-    /* width: 100px; */
+    height: 70px;
+    width: 22%;
 }
 .but0{
     background-color: rgba(15, 110, 199, 0.808);
@@ -57,14 +57,6 @@ button{
     color: white;
     background-color: rgba(0, 0, 0, 0.808);
 }
-@media screen and (max-width:520px) {
-    .pos-but{
-        width: 100%;
-        /* font-size: 250%; */
-        /* background-color: rgb(0, 0, 0); */
-    }
-    button{
-        margin: 0;
-        font-size: 35px;
-    }
-}
+/* @media screen and (max-width:520px) {
+    
+} */
