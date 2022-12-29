@@ -1,5 +1,7 @@
 const barre = document.querySelector('.barre')
 
+// h= innerHeight
+// w = innerWidth
 function barref(temps,color){
     let j= 0
     let veri = false
@@ -17,6 +19,7 @@ function barref(temps,color){
                 if(j == 99){
                     barre.style.width = 0+'px'
                     clearInterval(t1)
+                    barre.innerHTML = ''
                 }
             }, 1000);
         }
@@ -28,7 +31,7 @@ function barref(temps,color){
 const posB = document.querySelector('.pos-but')
 function plc() {
     h = innerHeight
-    posB.style.transform = 'translate(0,'+(h-100)+'px)'
+    posB.style.transform = 'translate(0,'+(h-150)+'px)'
 }
 plc()
 const ajouters = document.querySelector('.but1')
@@ -37,7 +40,7 @@ let i = 0
 ajouters.onclick = ()=>{
     barref(5,'rgb(15, 199, 76)')
     const t = setInterval(() => {
-        ++i
+        i++
         i % 5 ==0 ? clearInterval(t) : 0
         const e = document.createElement('div')
         e.className = "div"
@@ -45,6 +48,13 @@ ajouters.onclick = ()=>{
         e.appendChild(el)    
         const avant = document.querySelector('.div')
         par.insertBefore(e,avant)
+//         try {
+            
+// let div = document.querySelectorAll('.div')
+//             div[i].style.transform = 'translate('+x+'px,'+y+'px) rotate('+z+'deg)'
+//         } catch (error) {
+            
+//         }
         
     }, 200);
 }
@@ -78,6 +88,8 @@ sups.onclick= ()=>{
         let j= i = 0
         const el = document.querySelectorAll('.div')
         el.length != 0 ? barref(el.length,'#000') :0
+        el.length >= 50 ? barref(el.length+30,'#000') :0
+        el.length >= 20 ? barref(el.length+10,'#000') :0
         const t = setInterval(() => {
             try {
                 par.removeChild(el.item(j))
@@ -96,3 +108,31 @@ sups.onclick= ()=>{
 
 }
 
+const def = document.querySelectorAll('.def')
+
+function lc(i,y) {
+    // def.item(i).style.display = 'block'
+    def.item(i).style.transform = 'translate(200%,'+y+'px) rotate(-60deg)'
+    def.item(i).style.transition = 'all 4s'
+}
+function an(i,y) {
+    // def.item(i).style.opacity = '0'
+    def.item(i).style.transition = '0s'
+    // def.item(i).style.transform = 'translate(-55px,'+(y)+'px)'
+    def.item(i).style.transform = 'translate(-60px,'+y+'px) rotate(-90deg)'
+    
+}
+let j = 0
+const an1 = setInterval(() => {
+    j == 0 ? lc(j,20) : lc(j,-20)
+    setTimeout(() => {
+        j == 0 ? an(j,20) : an(j,-30)
+        j++
+        j == def.length ? j = 0:0
+    }, 2500);
+}, 5000);
+
+// const anm = document.querySelector('.anm')
+// setInterval(() => {
+    
+// }, 2000);
